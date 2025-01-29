@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bike Zone</title>
-<!-- dasiy UI CMD -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-</head>
-<body>
-     <!-- header section -->
-     <header class="bg-[#264653]" >
-           <!-- navbar -->
-     <div class="navbar">
-        <div class="navbar-start">
+    <!-- dasiy UI CMD -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="bg-[#264653]">
+      <!-- navbar -->
+      <div class="navbar">
+        <div>
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                class="h-7 w-7"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor  ">
+                stroke="white"
+              >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="4"
-                  d="M4 6h16M4 12h8m-8 6h16" 
-                  bg-white/>
+                  stroke-width="3"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
               </svg>
             </div>
             <ul
               tabindex="0"
-              class="menu menu-xl dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              class="menu menu-xl dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow-xl"
+            >
               <li><a>Home</a></li>
               <li><a>Shop</a></li>
               <li><a>News</a></li>
@@ -43,30 +50,100 @@
             </ul>
           </div>
         </div>
-        <div class="navbar  mt-5">
-            <div class="navbar-end">
-              
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-20">
-                <li><a class="text-white text-[16px]">Home</a></li>
-                  <li><a class="text-white text-[16px]">Shop</a></li>
-                  <li><a class="text-white text-[16px]">News</a></li>
-                  <li><a class="text-white text-[16px]">Contact</a></li>
-              </ul>
-            </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+        <div class="navbar">
+          <div class="navbar-end"></div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-20">
+              <li><a class="text-white text-[16px]">Home</a></li>
+              <li><a class="text-white text-[16px]">Shop</a></li>
+              <li><a class="text-white text-[16px]">News</a></li>
+              <li><a class="text-white text-[16px]">Contact</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:block">
+            <a class="btn">Button</a>
+          </div>
         </div>
       </div>
+
+        <!-- banner section -->\
+        <div class="carousel lg:mx-[156px] lg:pb-10 ">
+            
+            <div id="slide1" class="carousel-item  w-full   relative	">
+                <div class=" flex  items-center justify-center">
+                <!-- text contain -->
+             <div class="w-[50%] ">
+                <p class="text-white">Computer-controlled digital transistorized with electronic advance</p> <br>
+                <h1 class="text-white text-4xl font-bold">Honda CBR 300R</h1> <br>
+                <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>  <br>
+                <button class="btn">Purchase</button>
+           </div>
+              <img
+                src="./images/slider/bike1.png"
+                class="" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+        </div>
+            <div id="slide2" class="carousel-item relative w-full lg:flex items-center justify-center">
+                <!-- text contain -->
+             <div class="w-[40%] ">
+                <p class="text-white">Computer-controlled digital transistorized with electronic advance</p> <br>
+                <h1 class="text-white text-4xl font-bold">Honda CBR 300R</h1> <br>
+                <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>  <br>
+                <button class="btn">Purchase</button>
+           </div>
+              <img
+                src="./images/slider/bike2.png"
+                class="" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full lg:flex items-center justify-center">
+                <!-- text contain -->
+             <div class="w-[40%] ">
+                <p class="text-white">Computer-controlled digital transistorized with electronic advance</p> <br>
+                <h1 class="text-white text-4xl font-bold">Honda CBR 300R</h1> <br>
+                <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>  <br>
+                <button class="btn">Purchase</button>
+           </div>
+              <img
+                src="./images/slider/bike3.png"
+                class="" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class=" carousel-item relative w-full flex items-center justify-center">
+                <!-- text contain -->
+             <div class="w-[40%] ">
+                <p class="text-white">Computer-controlled digital transistorized with electronic advance</p> <br>
+                <h1 class="text-white text-4xl font-bold">Honda CBR 300R</h1> <br>
+                <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>  <br>
+                <button class="btn">Purchase</button>
+           </div>
+              <img
+                src="./images/slider/bike4.png"
+                class="" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
     </header>
-     <!-- main seciton -->
-     <main>
-
-     </main>
-     <!-- footer section -->
-     <footer>
-
-     </footer>
-</body>
+    <!-- main seciton -->
+    <main>
+        <section>
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quibusdam ipsum recusandae adipisci magnam est quos repellat sint assumenda alias consectetur suscipit accusantium nostrum mollitia fuga quidem perspiciatis, sunt dolorum unde tenetur. Laudantium sapiente autem in dolor consequuntur eos deleniti provident quibusdam odio, veritatis doloribus ex, adipisci doloremque assumenda debitis. Eaque beatae repellat ab qui consectetur, sapiente tempore molestiae eligendi impedit ducimus, vero fuga. Doloremque placeat iusto expedita molestias maxime adipisci ex modi reprehenderit amet. Nam doloremque ipsa pariatur facilis veniam error officia animi aliquam impedit in ullam tempora quae facere aspernatur, perferendis magni quidem rem. Nam quidem cupiditate incidunt!</h1>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer></footer>
+  </body>
 </html>
